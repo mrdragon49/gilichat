@@ -1,0 +1,179 @@
+:root{
+    --bmbg: black;
+    --bxbg:rgb(180, 180, 180);
+    --txtcl:rgb(255, 255, 255);
+    --dmtxt:rgb(114, 114, 114);
+    --hltxt:rgba(82, 250, 82, 0.432);
+    --btnclr:lightgreen;
+    --msgbg:rgba(5, 255, 5, 0.205);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: var(--bmbg);
+}
+#chat-container{
+    height: 93vh;
+    width: 100%;
+    background-color: var(--bmbg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.nrmlbtn{
+    padding: 10px;
+    border: 9px;
+    border-radius: 9px;
+    background-color: var(--btnclr);
+    color: var(--bmbg);
+    margin: 5px 0;
+    cursor: pointer;
+}
+.btnuse{
+     padding: 10px;
+    border: 9px;
+    border-radius: 9px;
+    background-color: var(--bxbg);
+    color: var(--bmbg);
+    margin: 5px 0;
+    cursor: pointer;
+}
+.controls{
+    width: 90%;
+    border: 1px solid white;
+    border-radius: 9px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+#control_inpt{
+    width: 100%;
+}
+.controlbtns{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+#control_inpt input{
+    width: 100%;
+    font: 20px;
+    padding: 0 5px;
+    height: 30px;
+    border-radius: 9px;
+    background: transparent;
+    color: var(--txtcl);
+    border: 1px solid var(--txtcl);
+    margin: 5px 0;
+}
+#creds-display{
+    color: var(--txtcl);
+}
+#msgsection{
+    height: 100%;
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#chatsection{
+    border: 1px solid white;
+    border-radius: 9px;
+    width: 95%;
+    padding: 5px;
+    height: 90%;
+}
+.topcht{
+    border-bottom: 1px solid white;
+    width: 100%;
+    color: var(--dmtxt);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.topcht p{
+        margin: 3px 7px;
+        font-size:10px;
+}
+.topcht p a{
+    text-decoration: none;
+    color: var(--hltxt);
+}
+#messages{
+    width: 100%;
+    height: 90%;
+}
+.chcontrl{
+    margin-top: 4px;
+    height: 50px;
+    width: 95%;
+    padding-left: 10px;
+    border: 1px solid var(--txtcl);
+    border-radius: 9px;
+}
+.chcontrl input{
+    width: 85%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: var(--txtcl);
+
+}
+.chcontrl button{
+    border: 1px solid var(--btnclr);
+    background-color: var(--btnclr);
+    border-radius: 9px;
+    width: 50px;
+    height: 80%;
+
+}
+#messages div{
+    margin: 4px 0;
+}
+.msg{
+        display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.msg p{
+    width: fit-content;
+    color: var(--dmtxt);
+    background-color: rgba(5, 255, 5, 0.205);
+    border-radius: 9px;
+    padding: 4px 10px;
+    font-size: 10px;
+
+}
+.user{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.user p{
+    padding: 5px 10px;
+        background-color: var(--dmtxt);
+
+    color: black;
+    border-radius: 9px;
+    max-width: 400px;
+}
+.serv{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.serv p{
+    padding: 5px 10px;
+    background-color: rgb(180, 180, 180);
+    color: black;
+    border-radius: 9px;
+    max-width: 400px;
+}
