@@ -125,14 +125,12 @@
             const msg = document.getElementById('msg-input').value;
             if (currentRoom && msg) {
                 socket.emit('send-message', { roomId: currentRoom, message: msg });
-                alert(currentRoom)
                 addMessage(msg, "user");
                 document.getElementById('msg-input').value = "";
             }
         }
 
         socket.on('receive-message', (msg) => {
-            alert("res");
             addMessage(msg, "serv");
         });
 
